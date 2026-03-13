@@ -1,11 +1,40 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+---
+import Card from "../components/Card.astro"
+---
+<html>
 
-<Layout>
-	<Welcome />
-</Layout>
+<head>
+  <title>Mi app de tareas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+  <h1>Mi lista de tareas</h1>
+</header>
+
+<Card>
+  <h2>Agregar tarea</h2>
+  <input id="taskInput" type="text">
+  <button id="addBtn">Agregar</button>
+</Card>
+
+<Card>
+  <h2>Tareas</h2>
+  <ul id="taskList"></ul>
+</Card>
+
+
+
+<Card>
+  <h2>Sobre la app</h2>
+  <p>Esta app permite organizar tareas.</p>
+</Card>
+
+<script src="/script.js" is:inline></script>
+</body>
+
+</html>

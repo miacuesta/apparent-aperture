@@ -1,0 +1,16 @@
+body{
+    font-family: Arial;
+    padding:20px;
+  }
+  
+  section{
+    margin-bottom:40px;
+  }
+  
+  @media (max-width:600px){
+  
+    body{
+      padding:10px;
+    }
+  
+  }
