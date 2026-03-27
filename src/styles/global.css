@@ -172,3 +172,8 @@
         text-decoration: line-through;
         opacity: 0.6;
         }
+
+.menu-btn{
+    position: absolute;
+    width: 3em;
+}
