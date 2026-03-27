@@ -1,32 +1,23 @@
 ---
+import Layout from "../layouts/Layout.astro"
 import Card from "../components/Card.astro"
-import "../styles/global.css"
 ---
 
-<html lang="es">
+<Layout>
 
-<head>
-  <title>Mi app de tareas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-
-<!-- BOTÓN DE MENÚ -->
 <button id="menuBtn" class="menu-btn">⚙</button>
 
-<!-- MENÚ LATERAL -->
 <div id="sideMenu" class="side-menu">
 
-  <h3>Opciones de tareas</h3>
+  <h3>Opciones</h3>
 
-  <button id="darkModeBtn"> 🌙 Modo oscuro</button>
-
-  <button id="clearBtn"> Borrar tareas</button>
-
-  <button id="completeAllBtn"> ✔ Marcar todas</button>
+  <button id="darkModeBtn">🌙 Modo oscuro</button>
+  <button id="clearBtn">🗑 Borrar tareas</button>
+  <button id="completeAllBtn">✔ Marcar todas</button>
 
 </div>
+
+<main>
 
 <header>
   <h1>Mi lista de tareas</h1>
@@ -48,8 +39,6 @@ import "../styles/global.css"
   <p>Esta app permite organizar tareas.</p>
 </Card>
 
-<script src="/script.js" is:inline></script>
+</main>
 
-</body>
-
-</html>
+</Layout>
